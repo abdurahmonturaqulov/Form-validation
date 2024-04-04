@@ -9,7 +9,7 @@ body {
 }  
 
 .login-box {
-    border: 1px solid red;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +18,6 @@ body {
     padding: 40px;
     background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    
     border-radius: 10px
 }
 
@@ -46,6 +45,7 @@ body {
     outline: none;
 
 }
+
 .login-box .user-box label {
 position: absolute;
 color: #FFFF;
@@ -55,9 +55,22 @@ padding: 10px 0;
 font-size: 16px;
 pointer-events: none;
 transition: 0.5s;
-
 }
 
+.login-box .user-box span {
+    position: absolute;
+    color: red;
+    left: 0;
+    top: 65%;
+    font-size: 12px;
+}
+
+.login-box .user-box input.err {
+    border-bottom: 1px solid red;
+}
+.login-box .user-box input.valid {
+    border-bottom: 1px solid #0f0;
+}
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
    top: -20px;
@@ -65,3 +78,13 @@ transition: 0.5s;
    color: #03e9f4;
    font-size: 12px;
 }  
+
+#btn {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
